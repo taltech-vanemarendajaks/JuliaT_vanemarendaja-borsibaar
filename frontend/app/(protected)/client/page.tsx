@@ -119,7 +119,7 @@ export default function ClientProductsByCategory() {
 
         <section className="rounded-2xl bg-[#1b1830] border border-[#2a2640] p-4 flex flex-col basis-2/3">
           <div className="mb-3 flex items-center justify-between">
-            <h3 className="text-lg md:text-xl items-center font-semibold tracking-wide text-[#a7a3c7]">
+            <h3 className="text-lg md:text-xl items-c font-semibold tracking-wide text-[#e2e0f3]">
               Products by Category
             </h3>
           </div>
