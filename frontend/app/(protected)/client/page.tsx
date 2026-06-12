@@ -225,7 +225,7 @@ export default function ClientProductsByCategory() {
 
             {!totalItems && !loading && (
               <div className="col-span-full flex h-40 items-center justify-center text-lg text-[#a7a3c7]">
-                No Products to display
+                No Products To Display
               </div>
             )}
           </div>
