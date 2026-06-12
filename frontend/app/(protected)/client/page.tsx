@@ -118,10 +118,10 @@ export default function ClientProductsByCategory() {
         )}
 
         <section className="rounded-2xl bg-[#1b1830] border border-[#2a2640] p-4 flex flex-col basis-2/3">
-          <div className="mb-3 mt-3 flex items-center justify-between">
-            <h3 className="text-lg md:text-xl items-c font-semibold tracking-wide text-[#e2e0f3]">
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-lg md:text-xl font-semibold tracking-wide">
               Products by Category
-            </h3>
+            </h2>
           </div>
 
           <div
@@ -157,7 +157,7 @@ export default function ClientProductsByCategory() {
 
                     <table className="w-full text-xs lg:text-sm border-separate border-spacing-y-1 break-before-avoid">
                       <thead className="break-after-avoid">
-                        <tr className="text-[9px] lg:text-[10px] xl:text-[12px] uppercase tracking-[0.16em] text-[#7a7690]">
+                        <tr className="text-[9px] lg:text-[10px] xl:text-[14px] uppercase tracking-[0.16em] text-[#7a7690]">
                           <th className="px-2 py-1 text-left">Product</th>
                           <th className="px-2 py-1 text-right">Price</th>
                           <th className="px-2 py-1 text-right">Δ%</th>
@@ -225,7 +225,7 @@ export default function ClientProductsByCategory() {
 
             {!totalItems && !loading && (
               <div className="col-span-full flex h-40 items-center justify-center text-lg text-[#a7a3c7]">
-                No products to display
+                No Products to display
               </div>
             )}
           </div>
