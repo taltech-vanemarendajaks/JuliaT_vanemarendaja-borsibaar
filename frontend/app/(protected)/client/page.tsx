@@ -4,6 +4,7 @@ import clsx from "clsx";
 import React, { useEffect, useState } from "react";
 import Chart from "./Chart";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type Category = { id: number; name: string; organizationId?: number };
 export type InvDto = {
@@ -108,6 +109,9 @@ export default function ClientProductsByCategory() {
     0,
   );
 
+  // TODO: BACK NAVIGATION BUTTON
+  const router = useRouter();
+
   return (
     <div className="w-full bg-[#141224] text-white px-4 py-4 flex items-stretch justify-center flex flex-col gap-4">
       <div className="flex flex-row gap-4">
@@ -118,7 +122,34 @@ export default function ClientProductsByCategory() {
         )}
 
         <section className="rounded-2xl bg-[#1b1830] border border-[#2a2640] p-4 flex flex-col basis-2/3">
-          <div className="mb-3 flex items-center justify-between">
+          <div className="mb-3 flex flex-col gap-3">
+            <button
+              type="button"
+              onClick={() => router.push("/dashboard")}
+              className="
+                mb-3
+                inline-flex
+                items-center
+                gap-2
+                px-4
+                py-2
+                rounded-xl
+                border
+                border-[#A78BFA]/60
+                bg-[#A78BFA]/15
+                hover:bg-[#A78BFA]/20
+                shadow-lg shadow-[#A78BFA]/20
+                transition-all
+              "
+            >
+              <span className="text-[#8b88a9] group-hover:text-white transition-colors">
+                ←
+              </span>{" "}
+              <span className="text-xs lg:text-sm font-semibold tracking-[0.18em] text-[#e9e6ff] uppercase">
+                Back
+              </span>
+            </button>
+
             <h2 className="text-lg md:text-xl font-semibold tracking-wide">
               Products by Category
             </h2>
