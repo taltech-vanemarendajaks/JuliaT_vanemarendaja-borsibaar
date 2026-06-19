@@ -150,7 +150,7 @@ export default function ClientProductsByCategory() {
               </span>
             </button>
 
-            <h2 className="text-lg md:text-xl font-semibold tracking-wide">
+            <h2 className="text-lg md:text-xl font-semibold tracking-wide text-[#8b88a9]">
               Products by Category
             </h2>
           </div>
