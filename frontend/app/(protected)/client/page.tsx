@@ -150,7 +150,7 @@ export default function ClientProductsByCategory() {
               </span>
             </button>
 
-            <h2 className="text-lg md:text-xl font-semibold tracking-wide">
+            <h2 className="text-lg md:text-xl font-semibold tracking-wide text-[#8b88a9]">
               Products by Category
             </h2>
           </div>
@@ -255,7 +255,7 @@ export default function ClientProductsByCategory() {
               })}
 
             {!totalItems && !loading && (
-              <div className="col-span-full flex h-40 items-center justify-center text-lg text-[#a7a3c7]">
+              <div className="col-span-full flex h-40 items-center justify-center text-lg text-[#ffffff]">
                 No Products To Display
               </div>
             )}
